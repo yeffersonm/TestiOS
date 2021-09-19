@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="160" id="KGk-i7-Jjw" customClass="ListUserTableViewCell" customModule="TestiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17777-4242-4244224" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzr-gT-Vfi">
+                        <rect key="frame" x="52" y="55" width="304" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="Xi2-Q7-8bq">
+                        <rect key="frame" x="20" y="54.5" width="22" height="23"/>
+                        <color key="tintColor" red="0.15686274510000001" green="0.65490196079999996" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Xi2-Q7-8bq" secondAttribute="height" multiplier="22:23" id="Dnm-lP-67b"/>
+                            <constraint firstAttribute="height" constant="23" id="xPp-YE-lFc"/>
+                            <constraint firstAttribute="width" constant="22" id="xrm-tc-2cA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emai@example.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-sk-APY">
+                        <rect key="frame" x="54" y="92" width="302" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email-2" translatesAutoresizingMaskIntoConstraints="NO" id="caa-E6-6xT">
+                        <rect key="frame" x="20" y="90.5" width="24" height="26"/>
+                        <color key="tintColor" red="0.15686274510000001" green="0.65490196079999996" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="6Y8-fA-0p0"/>
+                            <constraint firstAttribute="width" secondItem="caa-E6-6xT" secondAttribute="height" multiplier="12:13" id="UEr-6O-MCR"/>
+                            <constraint firstAttribute="width" constant="24" id="XDY-nV-DKK"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li1-Qy-xqJ">
+                        <rect key="frame" x="164" y="121" width="192" height="30"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="li1-Qy-xqJ" secondAttribute="height" multiplier="16:3" constant="32" id="5ch-hX-W9G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="tintColor" red="0.15686274510000001" green="0.65490196079999996" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Ver publicaciones"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leanne Graham" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw9-Vy-dQR">
+                        <rect key="frame" x="20" y="17" width="336" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" red="0.15686274510000001" green="0.65490196079999996" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="li1-Qy-xqJ" firstAttribute="top" secondItem="CMY-sk-APY" secondAttribute="bottom" constant="8" id="884-Hi-IVA"/>
+                    <constraint firstItem="li1-Qy-xqJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="164" id="97g-Lb-rEm"/>
+                    <constraint firstItem="CMY-sk-APY" firstAttribute="leading" secondItem="caa-E6-6xT" secondAttribute="trailing" constant="10" id="CpV-4q-Ylv"/>
+                    <constraint firstItem="caa-E6-6xT" firstAttribute="top" secondItem="Xi2-Q7-8bq" secondAttribute="bottom" constant="13" id="DSz-WX-81G"/>
+                    <constraint firstItem="uzr-gT-Vfi" firstAttribute="top" secondItem="uw9-Vy-dQR" secondAttribute="bottom" constant="17" id="F4a-76-G2o"/>
+                    <constraint firstItem="uzr-gT-Vfi" firstAttribute="leading" secondItem="Xi2-Q7-8bq" secondAttribute="trailing" constant="10" id="KFp-FJ-oe5"/>
+                    <constraint firstAttribute="trailing" secondItem="uzr-gT-Vfi" secondAttribute="trailing" constant="20" symbolic="YES" id="MxC-qc-6du"/>
+                    <constraint firstAttribute="trailing" secondItem="CMY-sk-APY" secondAttribute="trailing" constant="20" symbolic="YES" id="QSX-nb-miA"/>
+                    <constraint firstAttribute="trailing" secondItem="uw9-Vy-dQR" secondAttribute="trailing" constant="20" symbolic="YES" id="RcX-NU-SL2"/>
+                    <constraint firstItem="caa-E6-6xT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ZVG-wl-qeQ"/>
+                    <constraint firstItem="uw9-Vy-dQR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="bP5-Fw-y0p"/>
+                    <constraint firstAttribute="trailing" secondItem="li1-Qy-xqJ" secondAttribute="trailing" constant="20" symbolic="YES" id="dSv-bY-1yh"/>
+                    <constraint firstItem="Xi2-Q7-8bq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="fyK-WI-4q8"/>
+                    <constraint firstAttribute="bottom" secondItem="li1-Qy-xqJ" secondAttribute="bottom" constant="9" id="qSO-OX-pRT"/>
+                    <constraint firstItem="uw9-Vy-dQR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="qmx-WT-9Of"/>
+                    <constraint firstItem="Xi2-Q7-8bq" firstAttribute="top" secondItem="uw9-Vy-dQR" secondAttribute="bottom" constant="16.5" id="yOa-IO-1ew"/>
+                    <constraint firstItem="CMY-sk-APY" firstAttribute="top" secondItem="uzr-gT-Vfi" secondAttribute="bottom" constant="16" id="zdw-fO-NeI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailUser" destination="CMY-sk-APY" id="STX-hA-qkU"/>
+                <outlet property="imageEmail" destination="caa-E6-6xT" id="Z4P-dv-N37"/>
+                <outlet property="imagePhone" destination="Xi2-Q7-8bq" id="EeQ-Sa-WE8"/>
+                <outlet property="nameUser" destination="uw9-Vy-dQR" id="JTz-al-BE3"/>
+                <outlet property="telUser" destination="uzr-gT-Vfi" id="zzy-69-Rlm"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="99.776785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="call" width="384" height="384"/>
+        <image name="email-2" width="477.86700439453125" height="477.86700439453125"/>
+    </resources>
+</document>

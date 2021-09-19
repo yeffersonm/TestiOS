@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List User View-->
+        <scene sceneID="0S8-kk-O2y">
+            <objects>
+                <viewController id="QGT-7R-zzW" customClass="ListUserView" customModule="TestiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6R3-w7-fym">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cnl-MU-yFY">
+                                <rect key="frame" x="20" y="170" width="374" height="692"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="7A2-fL-Bir">
+                                <rect key="frame" x="20" y="101" width="374" height="56"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.97647058819999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.15686274510000001" green="0.65490196079999996" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tbm-VB-rTL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7A2-fL-Bir" firstAttribute="leading" secondItem="Tbm-VB-rTL" secondAttribute="leading" constant="20" id="21a-Fi-aPs"/>
+                            <constraint firstItem="Tbm-VB-rTL" firstAttribute="trailing" secondItem="cnl-MU-yFY" secondAttribute="trailing" constant="20" id="9lO-Xx-id7"/>
+                            <constraint firstItem="cnl-MU-yFY" firstAttribute="leading" secondItem="Tbm-VB-rTL" secondAttribute="leading" constant="20" id="Cuq-5P-lAc"/>
+                            <constraint firstItem="7A2-fL-Bir" firstAttribute="top" secondItem="Tbm-VB-rTL" secondAttribute="top" constant="13" id="Fci-lt-l8B"/>
+                            <constraint firstItem="Tbm-VB-rTL" firstAttribute="trailing" secondItem="7A2-fL-Bir" secondAttribute="trailing" constant="20" id="Zd0-cY-0D4"/>
+                            <constraint firstItem="Tbm-VB-rTL" firstAttribute="bottom" secondItem="cnl-MU-yFY" secondAttribute="bottom" id="fgN-Uz-dPM"/>
+                            <constraint firstItem="cnl-MU-yFY" firstAttribute="top" secondItem="7A2-fL-Bir" secondAttribute="bottom" constant="13" id="nZu-9D-bON"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ysj-zh-4QP"/>
+                    <connections>
+                        <outlet property="tableUser" destination="cnl-MU-yFY" id="59R-4p-afp"/>
+                        <outlet property="textSearch" destination="7A2-fL-Bir" id="7tA-cP-KLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JeM-AJ-laY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010.144927536232" y="73.660714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Mvf-wN-fs2">
+            <objects>
+                <navigationController storyboardIdentifier="ListUser" automaticallyAdjustsScrollViewInsets="NO" id="cQJ-MA-e7T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DaP-1K-pxZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.15686274510000001" green="0.65490196079999996" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.15686274510000001" green="0.65490196079999996" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.96470588239999999" green="0.97647058819999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QGT-7R-zzW" kind="relationship" relationship="rootViewController" id="ccF-hC-PRF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D49-Og-KqQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
